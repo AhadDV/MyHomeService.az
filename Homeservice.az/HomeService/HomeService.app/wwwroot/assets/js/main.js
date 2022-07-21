@@ -12,7 +12,7 @@
     if (header.classList.contains("sticky")) {
         logo.src = "/design/logo (2).png";
     } else {
-        logo.src = "/design/logoWhite2.png";
+        logo.src = "/design/04848b13-cc38-4f0d-83ab-e5c8a8744ac6logoWhite.png";
     }
     const backToTop = document.querySelector(".back-to-top");
     if (
