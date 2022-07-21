@@ -129,7 +129,12 @@ namespace HomeService.service.Implementations
 
             if (blogPostDto.ImageFile!=null)
             {
-                Helpers.Helper.DeleteImg(_env.WebRootPath, "assets/images/blog", blog.Image);
+                
+                  if (blog.Image!=null)
+                {
+                    Helpers.Helper.DeleteImg(_env.WebRootPath, "assets/images/blog", blog.Image);
+                }
+                
                 blog.Image = blogPostDto.ImageFile.SaveImage(_env.WebRootPath, "assets/images/blog");
             }
             
